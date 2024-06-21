@@ -1,0 +1,49 @@
+.seguro2-bg {
+  background: linear-gradient(
+    to bottom,
+    var(--cor-1) 10%,
+    var(--cor-11) 10%,
+    var(--cor-11) 90%,
+    var(--cor-12) 90%
+  );
+}
+
+.seguro2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.seguro2-conteudo {
+  padding: 160px 0px;
+}
+
+.seguro2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.seguro2 h2 {
+  margin-bottom: 32px;
+}
+
+.seguro2 p {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+  .seguro2 {
+    grid-template-columns: 1fr;
+  }
+  .seguro2-bg {
+    background: var(--cor-12);
+  }
+
+  .seguro2-conteudo {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .seguro2-img {
+    grid-row: 2;
+  }
+}
